@@ -35,7 +35,7 @@ Amazon **Route 53** is a scalable **Domain Name System (DNS)** service that help
 - Logged in to the **AWS Management Console**.
 - Searched for **S3** in the search bar.
 - Clicked on **S3** to access the dashboard.
-https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/2.png
+! https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/2.png
 ### 1.2 Created a Bucket
 - Clicked **Create bucket**.
 - Set **Bucket Name** (e.g., `my-website-project`).
