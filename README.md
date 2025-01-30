@@ -138,7 +138,7 @@ https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f63
   - Disabled **Evaluate target health**.
 - Saved changes.
 https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/25.png
-https://raw.githubusercontent.com/vikranth8400/AWS-S3-Hosting/544c4be3a4dfdbb778ecdb468f630f4f27675b49/26.png
+https://raw.githubusercontent.com/vikranth8400/AWS-S3-Hosting/main/26.png
 
 ---
 
