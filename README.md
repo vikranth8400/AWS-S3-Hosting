@@ -35,16 +35,16 @@ Amazon **Route 53** is a scalable **Domain Name System (DNS)** service that help
 - Logged in to the **AWS Management Console**.
 - Searched for **S3** in the search bar.
 - Clicked on **S3** to access the dashboard.
-
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/2.png
 ### 1.2 Created a Bucket
 - Clicked **Create bucket**.
 - Set **Bucket Name** (e.g., `my-website-project`).
-  - Bucket names must be **globally unique** and cannot contain **uppercase characters**.
+- Bucket names must be **globally unique** and cannot contain **uppercase characters**.
 - Selected **ACLs enabled** for **Object Ownership**.
 - Disabled **Block all public access** and acknowledged the settings.
 - Enabled **Bucket Versioning**.
 - Clicked **Create bucket**.
-
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/4.png
 ---
 
 ## Step 2: Uploading Website Content
@@ -54,7 +54,7 @@ Amazon **Route 53** is a scalable **Domain Name System (DNS)** service that help
 - Clicked **Upload**.
 - Added `index.html` and related assets.
 - Clicked **Upload**.
-
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/5.png
 ---
 
 ## Step 3: Configuring Static Website Hosting
@@ -65,13 +65,14 @@ Amazon **Route 53** is a scalable **Domain Name System (DNS)** service that help
 - Enabled **Host a static website**.
 - Set **Index document** to `index.html`.
 - Saved changes and noted the **Bucket website endpoint**.
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/7.png
 
 ### 3.2 Made Website Files Public
 By default, S3 objects are private. To make them public:
 - Went to the **Objects** tab in the S3 bucket.
 - Selected `index.html` and other assets.
 - Clicked **Actions** > **Make public using ACL**.
-
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/9.png
 ---
 
 ## Step 4: Securing the Bucket
@@ -79,7 +80,7 @@ By default, S3 objects are private. To make them public:
 Added a **bucket policy** to prevent accidental deletion:
 - Opened the **Permissions** tab in S3.
 - Edited the **Bucket Policy** and added:
-  
+
   ```json
   {
     "Version": "2012-10-17",
@@ -100,8 +101,10 @@ Added a **bucket policy** to prevent accidental deletion:
 ### 4.2 Used Pre-Signed URLs for Secure Access
 For temporary secure access:
 - Used **AWS CLI** or SDK to generate a **pre-signed URL**.
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/12.png
 - The pre-signed URL expired after a set time, restricting access.
-
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/13.png
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/16.png
 ---
 
 ## Step 5: Enabling Bucket Versioning
@@ -109,7 +112,7 @@ For temporary secure access:
 - Opened **S3 bucket** > **Properties**.
 - Enabled **Bucket Versioning**.
 - Verified that all object versions were stored.
-
+ https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/6.png 
 ---
 
 ## Step 6: Configuring a Custom Domain with Route 53
@@ -117,11 +120,15 @@ For temporary secure access:
 - Opened **Route 53**.
 - Went to **Domain Registration** > **Registered Domain**.
 - Chose an available domain name and completed the purchase.
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/21.png
 
 ### 6.2 Created a New S3 Bucket for the Domain
 - Created a **new S3 bucket** matching the domain name (e.g., `mydomain.com`).
 - Enabled **Static website hosting**.
 - Uploaded `index.html` and assets.
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/23.png
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/24.png
+
 
 ### 6.3 Linked the Domain to S3
 - Opened **Route 53** > **Hosted Zones**.
@@ -130,7 +137,8 @@ For temporary secure access:
   - Chose the appropriate **AWS Region**.
   - Disabled **Evaluate target health**.
 - Saved changes.
-
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/25.png
+https://github.com/vikranth8400/AWS-S3-Hosting/blob/544c4be3a4dfdbb778ecdb468f630f4f27675b49/26.png
 ---
 
 ## Conclusion
