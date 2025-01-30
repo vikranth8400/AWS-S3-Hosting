@@ -5,7 +5,8 @@ This project demonstrates how to host a static website using Amazon S3, AWS’s 
 The goal is to create a publicly accessible website while learning core AWS tools and security best practices. Amazon Simple Storage Service (Amazon S3) is an object storage service that provides high availability, security, and scalability. This guide will walk you through hosting a static website on **Amazon S3**, making it publicly accessible, securing it with **ACLs and Bucket Policies**, enabling **Versioning**, and linking it with a **Custom Domain** via **AWS Route 53**.
 
 ---
-https://github.com/vikranth8400/AWS-S3-Hosting/blob/b67920b2dcba07ce20281701390ba461468ab575/1.png
+[https://github.com/vikranth8400/AWS-S3-Hosting/blob/b67920b2dcba07ce20281701390ba461468ab575/1.png](https://raw.githubusercontent.com/vikranth8400/AWS-S3-Hosting/b67920b2dcba07ce20281701390ba461468ab575/1.png
+)
 ## Understanding Key Concepts
 
 ### 1. Amazon S3 (Simple Storage Service)
