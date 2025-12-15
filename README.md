@@ -6,7 +6,6 @@ The goal is to create a publicly accessible website while learning core AWS tool
 
 ---
 
-)
 ## Understanding Key Concepts
 
 ### 1. Amazon S3 (Simple Storage Service)
